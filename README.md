@@ -1,4 +1,4 @@
-# pricecompare by Devsly
+# pricecompare by devsly
 
 PROJECT DESCRIPTION:
 This website application allows users to create a shopping list that displays the 
