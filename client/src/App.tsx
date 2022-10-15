@@ -1,9 +1,17 @@
 import React, { ReactElement } from "react";
+import SearchBox from "./components/searchBox";
+
+const styles = {
+  divStyle: {
+    textAlign: "center" as const,
+  },
+};
 
 const App = (): ReactElement => {
   return (
     <div>
-      <h1>HELLO</h1>
+      <h1 style={styles.divStyle}>Welcome Price Comparer</h1>
+      <SearchBox />
     </div>
   );
 };
