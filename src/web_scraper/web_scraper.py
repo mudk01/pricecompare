@@ -24,5 +24,5 @@ results = driver.find_elements(By.XPATH, "//div[@data-test='product-details']")
 for result in results:
     title_div = result.find_element(By.CLASS_NAME, "h-display-flex")
     title = title_div.find_element(By.TAG_NAME, "div").text
-    price = result.find_element(By.XPATH, "//span[@data-test='current-price']").text
+    price = result.find_element(By.CLASS_NAME, "h-padding-r-tiny").text
     print(title, price)
