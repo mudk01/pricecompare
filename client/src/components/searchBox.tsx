@@ -6,7 +6,8 @@ const SearchBox = (): ReactElement => {
   const [searchInput, setSearchInput] = useState("");
 
   const searchItem = async () => {
-    const response = await fetch("http://127.0.0.1:5000/", {
+    const url = `http://127.0.0.1:5000/compare/${searchInput}`;
+    const response = await fetch(url, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -10,7 +10,7 @@ const styles = {
 const App = (): ReactElement => {
   return (
     <div>
-      <h1 style={styles.divStyle}>Welcome Price Comparer</h1>
+      <h1 style={styles.divStyle}>Welcome to Price Comparer</h1>
       <SearchBox />
     </div>
   );
