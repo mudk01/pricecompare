@@ -39,8 +39,8 @@ class Square(Resource):
 
 class Compare(Resource):
     def get(self, str):
-        lists = web_scraper.compare(str)
-        return jsonify({"input": lists})
+        data = web_scraper.compare(str)
+        return jsonify({"data": data})
 
 
 # adding the defined resources along with their corresponding urls
